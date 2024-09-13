@@ -1,5 +1,3 @@
-# arquivo: arvore.py
-
 # Definição da classe Nodo, que representa um nó da árvore
 class Nodo:
     def __init__(self, valor):

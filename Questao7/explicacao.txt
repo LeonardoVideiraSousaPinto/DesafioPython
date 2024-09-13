@@ -1,0 +1,13 @@
+VPNs: Conectam sua rede local à sua VPC na AWS de forma segura e criptografada.
+
+Subnets: Dividem sua VPC em segmentos (públicos e privados) para organizar e isolar recursos.
+
+Security Groups: Agem como firewalls virtuais, controlando o tráfego permitido para as instâncias dentro da VPC.
+
+Relação entre eles:
+
+VPNs e Subnets: A VPN permite comunicação segura entre sua rede local e as subnets na VPC.
+
+Subnets e Security Groups: Security Groups controlam o acesso às instâncias dentro das subnets.
+
+VPNs e Security Groups: A VPN estabelece a conexão segura, enquanto os Security Groups definem o tráfego permitido dentro dessa conexão.
