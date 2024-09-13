@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  selenium:
+    image: selenium/standalone-chrome:128.0.6613.119
+    ports:
+      - "4444:4444"
+    container_name: selenium
+
+  python-app:
+    build: .
+    depends_on:
+      - selenium
+    container_name: python-app
+    volumes:
+      - .:/app  # Mapeia a raiz do diretório do host para /app no contêiner
