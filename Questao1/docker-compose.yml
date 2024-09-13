@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  python-app:
+    build: .
+    container_name: python-app
+    volumes:
+      - ./json:/app/json  # Mapeia a raiz do diretório do host para /app no contêiner
