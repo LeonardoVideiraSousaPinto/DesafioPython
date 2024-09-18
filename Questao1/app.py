@@ -1,6 +1,7 @@
 import requests
 import json
 import logging
+import os
 
 # Configuração do Logger
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -116,6 +117,9 @@ class DadosSalvador:
         logger.info(f"Dados salvos em {self.nome_arquivo}")
 
 def main():
+    # Criar a pasta 'json'
+    os.makedirs('json', exist_ok=True)
+    
     # Definindo diretamente uma lista de categorias
     categorias_codigos = [
         Categoria('destaques', '1458'),
